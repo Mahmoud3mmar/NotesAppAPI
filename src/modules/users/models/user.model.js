@@ -1,6 +1,6 @@
 import { DataTypes } from "sequelize"
 import sequelize from "../../../db/dbconnection.js"
-
+// import {seedDatabase} from '../../../db/seed.js'
 
 
 const user = sequelize.define('user',{
@@ -48,7 +48,7 @@ const user = sequelize.define('user',{
 
 
 user.sync()
-
+// seedDatabase
 export default user
 
 

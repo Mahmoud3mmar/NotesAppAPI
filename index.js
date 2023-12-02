@@ -1,14 +1,18 @@
 import express from 'express'
 import UserRouter from './src/modules/users/routers/user.router.js'
-import TaskRouter from './src/modules/tasks/routers/task.router.js'
+import NotesRouter from './src/modules/notes/routers/notes.router.js'
 
 const app = express()
 const port = 5000
 
 
 app.use(express.json())
-app.use('/users',UserRouter)
-app.use('/tasks',TaskRouter)
+
+app.use('/user',UserRouter)
+
+
+
+app.use('/notes',NotesRouter)
 
 
 
